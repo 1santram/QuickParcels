@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Login">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+
+
+       <!-- <TextView
+            android:id="@+id/titletxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_color"
+            android:layout_marginTop="12dp"
+            android:text="Quick Parcels"
+            android:textSize="33.3sp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/mavenpro_medium"
+            android:gravity="center"/>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_above="@id/lay"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Signin"
+            android:textColor="@color/green"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_above="@+id/edtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="23.3dp"
+        android:layout_marginLeft="23.3dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/gray_rect"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/sppiner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="20dp"
+                android:layout_height="13.3dp"
+                android:src="@drawable/ic_india"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:text="+91"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginLeft="7dp"/>
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_line"/>
+
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/usermobile"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6C6D79"
+            android:focusable="true"
+            android:textCursorDrawable="@drawable/cursor"
+            android:focusableInTouchMode="true"
+            android:hint="Enter Mobile number"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/txt_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:background="@color/transperent"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/edtpassword"
+        android:layout_above="@+id/button"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="23.3dp"
+        android:layout_marginLeft="23.3dp"
+        android:layout_marginBottom="23.3dp"
+        android:background="@drawable/gray_rect"
+        android:orientation="horizontal">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="15dp"
+                android:layout_height="13.3dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+
+            <ImageView
+                android:id="@+id/country_codes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_lock_outline_24dp"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginLeft="7dp"/>
+
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_line"/>
+
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/userpassword"
+            android:layout_height="wrap_content"
+            android:textColorHint="#6C6D79"
+            android:hint="Enter Password"
+            android:focusable="true"
+            android:textCursorDrawable="@drawable/cursor"
+            android:focusableInTouchMode="true"
+            android:inputType="textPassword"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/txt_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:background="@color/transperent"/>
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="23.3dp"
+        android:layout_marginLeft="23.3dp"
+        android:layout_marginBottom="26.3dp"
+        android:layout_above="@+id/button"
+        android:background="@drawable/gray_rect"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/sppiner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="20dp"
+                android:layout_height="13.3dp"
+                android:src="@drawable/ic_india"
+                android:layout_marginLeft="10dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:id="@+id/country_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/txt_color"
+                android:text="+91"
+                android:textSize="15sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginLeft="7dp"/>
+
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/view_line"/>
+
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:id="@+id/userno"
+            android:layout_height="wrap_content"
+            android:textColorHint="#8f909e"
+            android:hint="Enter Mobile number"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/txt_color"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="15dp"
+            android:background="@color/transperent"/>
+
+    </LinearLayout>-->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_above="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_btn"
+        android:textColor="@color/white"
+        android:text="Signin"
+        android:textAllCaps="false"
+        android:textSize="16.7sp"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginBottom="12.7dp"
+        android:layout_marginLeft="23.3dp"
+        android:layout_marginRight="23.3dp" />
+
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_txt"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:paddingTop="3dp"
+                    android:text="New User"
+                    android:textAllCaps="false"
+                    android:textColor="#605e5e"
+                    android:textSize="12.7sp" />
+
+                <TextView
+                    android:id="@+id/signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=" Signup"
+                    android:textAllCaps="false"
+                    android:textColor="@color/roboto_calendar_circle_1"
+                    android:textSize="15.6dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/forgotpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/roboto_regular"
+                    android:gravity="right"
+                    android:text="Forgot Password"
+                    android:textColor="@color/roboto_calendar_circle_1"
+                    android:textSize="15.6sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="18dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By continue, you agree to our "
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#605e5e"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/green"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/green"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and"
+                android:textColor="#605e5e"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/privacy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text=" Privacy Policy"
+                    android:textColor="@color/green"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="@color/green"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

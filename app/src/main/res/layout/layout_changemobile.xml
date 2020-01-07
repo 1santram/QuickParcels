@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/above"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="16.8dp"
+            android:layout_marginTop="16.8dp"
+            android:text="Change Contact Number"
+            android:textColor="@color/green"
+            android:textSize="18.8sp" />
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.8dp"
+            android:text="Register Mobile Number"
+            android:textColor="@color/toolbartxtcolor"
+            android:textSize="11.7sp" />
+
+        <EditText
+            android:id="@+id/oldmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Enter Registerd Mobile Number "
+            android:inputType="number"
+            android:maxLength="10"
+            android:padding="12dp"
+            android:background="@drawable/gray_rect"
+            android:textColorHint="#6C6D79"
+            android:textSize="15sp" />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.8dp"
+            android:text="New Mobile Number"
+            android:textColor="@color/toolbartxtcolor"
+            android:textSize="11.7sp" />
+
+        <EditText
+            android:id="@+id/newmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Enter New Mobile Number "
+            android:inputType="number"
+            android:textCursorDrawable="@drawable/cursor"
+            android:maxLength="10"
+            android:cursorVisible="true"
+            android:padding="12dp"
+            android:background="@drawable/gray_rect"
+            android:textColorHint="#6C6D79"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.8dp"
+            android:text="Confirm Mobile Number"
+            android:textColor="@color/toolbartxtcolor"
+            android:textSize="11.7sp" />
+
+        <EditText
+            android:id="@+id/cnfnewmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Confirm Mobile Number "
+            android:inputType="number"
+            android:maxLength="10"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@drawable/cursor"
+            android:padding="12dp"
+            android:background="@drawable/gray_rect"
+            android:textColorHint="#6C6D79"
+            android:textSize="15sp" />
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/above"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/bottom_linear"
+            android:orientation="vertical"
+            android:background="@color/view_line"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/bottom_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/updatemobile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="11.7dp"
+                android:background="@drawable/gradient_btn"
+                android:layout_marginRight="11.7dp"
+                android:layout_marginTop="8.7dp"
+                android:layout_marginBottom="11.7dp"
+                android:text="Update Mobile Number"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="18.3sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

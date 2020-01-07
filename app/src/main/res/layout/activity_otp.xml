@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Otp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/text_icon"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENTER VERIFICATION CODE"
+                android:textSize="18.3sp"
+                android:textColor="@color/txt_color"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="we have send 4 digit code on"
+                android:textSize="13.3sp"
+                android:textColor="@color/green"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/number"
+                android:fontFamily="@font/roboto_light"
+                android:gravity="center"
+                android:textSize="15sp"/>
+
+
+            <com.goodiebag.pinview.Pinview
+                android:id="@+id/pinview"
+                app:pinBackground="@drawable/gray_rect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:pinWidth="40dp"
+                app:pinHeight="40dp"
+                app:pinLength="4"
+                app:cursorVisible="true"
+                app:forceKeyboard="true"
+                app:hint="0"
+                app:inputType="number"
+                app:password="false"/>
+
+            <TextView
+                android:id="@+id/timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:textColor="#FFB152"
+                android:textSize="11.7sp"
+                android:fontFamily="@font/roboto_light"/>
+
+            <TextView
+                android:id="@+id/otpmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OTP entered is expired. Please resend a new OTP and try again."
+                android:visibility="gone"
+                android:gravity="center"
+                android:textColor="#FD2929"
+                android:textSize="11.7sp"
+                android:fontFamily="@font/roboto_light"/>
+
+
+            <TextView
+                android:id="@+id/resendotp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Didn’t get code RESEND!"
+                android:gravity="center"
+                android:focusable="true"
+                android:clickable="false"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/roboto_calendar_circle_1"
+                android:textSize="16.7sp"
+                android:fontFamily="@font/roboto_light"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

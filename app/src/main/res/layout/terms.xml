@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/txt"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="50dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/green"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Terms &amp; Conditions"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/close_img"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_close_24dp"/>
+
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_below="@id/txt"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="TERMS AND CONDITIONS AGREEMENTS ACT AS A LEGAL AGREEMENT BETWEEN YOUR (COMPANY) WHO HAS A WEBSITE OR MOBILE APP AND A USER WHO ACCESSES YOUR WEBSITE AND MOBILE APPS.
+CONTRACTING THE TERMS AND CONDITIONS IS COMPLETELY OPTIONAL. NO LAW REQUIRES YOU TO HAVE ONE.  "
+                    android:textColor="@color/toolbartxtcolor"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gray_rect"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="IT'S UP TO YOU TO SET THE RULES AND GUIDELINES THAT USERS AGREE WITH. YOU CAN THINK OF YOUR TERMS AND CONDITIONS AGREEMENT AS A LEGAL AGREEMENT WHERE YOU RETAIN YOUR RIGHTS TO EXCLUDE USERS FROM YOUR APP IN CASE OF MISUSE OF YOUR APP, WHERE YOU MAY BE ABLE TO PROTECT YOUR RIGHTS AGAINST POTENTIAL APP ABUSERS. MAINTAIN LEGAL RIGHTS, AND SO ON.
+TERMS AND CONDITIONS ALSO SAY TERMS OF SERVICE OR TERMS OF USE  "
+                    android:textColor="@color/toolbartxtcolor"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gray_rect"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DEFINATIONS"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_rect"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * QUICK PARCEL– MEANS QUICK PARCELS"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * CONTRACTING THE TERMS AND CONDITIONS IS COMPLETELY OPTIONAL. NO LAW REQUIRES YOU TO HAVE ONE. "
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * IT'S UP TO YOU TO SET THE RULES AND GUIDELINES THAT USERS AGREE WITH. YOU CAN THINK OF YOUR TERMS AND CONDITIONS AGREEMENT AS A LEGAL AGREEMENT WHERE YOU RETAIN YOUR RIGHTS TO EXCLUDE USERS FROM YOUR APP IN CASE OF MISUSE OF YOUR APP, WHERE YOU MAY BE ABLE TO PROTECT YOUR RIGHTS AGAINST POTENTIAL APP ABUSERS. MAINTAIN LEGAL RIGHTS, AND SO ON."
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * TERMS AND CONDITIONS ALSO SAY TERMS OF SERVICE OR TERMS OF USE QUICK PARCEL."
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * CONTRACT - THE AGREEMENT BETWEEN THE CUSTOMER AND QUICK PARCEL FOR PROVISION OF SERVICES."
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * ORDER/BOOKING - AN ORDER/BOOKING PLACED ON THE APP YA SITE BETWEEN US AND THE CUSTOMER."
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * PROHIBITED ITEM - MEANS CANNOT BE CARRIED ON ANY SERVICE."
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * RESTRICTED ITEM - MEANS WE DO NOT RECOMMEND SENDING AND WOULD BE AT YOUR OWN RISK."
+                        android:layout_marginLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="COMPLAINTS"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_rect"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="WE AIM TO PROVIDE OUTSTANDING CUSTOMER SERVICE. IF YOU HAVE ANY COMPLAINT ABOUT THE SERVICE YOU HAVE RECEIVED FROM US, PLEASE CONTACT OUR COMPLAINTS DEPARTMENT BY WRITING TO US AT OUR OFFICE ADDRESS OR EMAILING QUICK PARCEL PLEASE ALLOW 4 WORKING DAYS FOR A RESPONSE TO ANY WRITTEN CORRESPONDENCE."
+                        android:textStyle="bold"
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CUSTOMER PAYMENT"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_rect"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="THIS IS THE RULE OF THE COMPANY THAT YOU CAN  PICKUP YA DROP POINT PAYMENT.
+AND YOU CAN  PAY ONLINE YA OFFLINE IF YOU WISH.
+ YOU HAVE PAID ONLINE, CANCELLED THE ORDER.  YOUR MONEY AMOUNT WILL BE REFUNDED 100% WITHIN TWO DAYS."
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PARCELS  PACKING"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_rect"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GIVE YOUR PARCEL THAT PACKING BY ITSELF. IF THERE IS ANY DOUBT ON YOUR PARCEL, THE DELIVERY PARTNER CAN CHECK THE PARCEL. COSTUMER SHOULD NOT OBJECT."
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * THE COMPANY WILL PAY YOU RS. 100 IF ANY DAMAGE IS CAUSED TO YOUR PARCEL. IF A COSTUMER REFUSES TO CHECK THE PARCEL, THE PARCEL WILL NOT BE IN ANY WAY TO RESPOND TO THE DAMAGE COMPANY."
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * IF YOU ARE NOT SATISFIED WITH THE WORK OR CONDUCT OF THE DELIVERY PARTNER, YOU CAN COMPLAIN TO THE COMPANY ON THE CONTACT NUMBER OR EMAIL."
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MAXIMUM WEIGHT"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:paddingLeft="3dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/gray_rect"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" * SEND PARCELS UP TO 10KG.  "
+                        android:textColor="@color/toolbartxtcolor"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

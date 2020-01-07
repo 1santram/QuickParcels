@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18.6sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/toolbartxtcolor"
+        android:text="No Records Found..."/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerinprogress"
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminateTint="@color/toolbartxtcolor"
+        android:progressTint="@color/toolbartxtcolor"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
